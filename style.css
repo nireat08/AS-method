@@ -1,0 +1,215 @@
+header > div{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+header nav ul {
+    display: flex;
+}
+header nav{
+    display: flex;
+}
+
+.sub_menu{
+    display: none; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    /* display: flex; */
+    gap: 50px;
+    display: none;   
+}
+
+.Main_solving > li:hover .sub_menu{
+    display: flex;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 20px;
+    background:linear-gradient(to bottom, #f6f5ef 90px, #2c2a29 90px);
+    height: 110px; /*임시 */
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 11px; /* 네비게이션 링크의 글꼴 크기 조정 */
+}
+
+.top_menu{
+    gap: 20px;
+}
+
+.Main_solving {
+    display: flex; /* Flexbox를 사용하여 수평 배치 */
+    list-style-type: none; /* 기본 목록 스타일 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.Main_solving > li{
+    line-height: 30px;
+}
+
+.Main_solving > li > a{
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    font-size: 14px; /* 메인 솔빙 링크의 글꼴 크기 조정 */
+}
+.Main_solving > li > a:hover{
+    background-color: #2C2A29;
+    color: #669900;
+}
+
+
+.sub_menu dt a{
+    color: #fff;
+    padding: 5px;
+}
+
+.sub_menu dd a {
+    color: #999;
+    padding: 1px;
+}
+
+dd{
+    margin: 5px;
+}
+
+dd a {
+    margin: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 9px; /* 기본 글꼴 크기를 14px로 설정 */
+    padding-top: 110px; /* header height에 맞춰 padding-top 조정 */
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main > div {
+    width: 80%; /* 컨텐츠의 최대 너비 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+}
+
+main > h1 {
+    padding-bottom: 20px;
+    padding-left: 100px;
+    text-align: left; /* 헤딩을 중앙 정렬 */
+}
+
+
+
+
+main nav li a{
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+nav li {
+    list-style-type: none;
+    padding: none;
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+top{
+    padding-top: 20px;
+    padding-left: 220px;
+    height: 250px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+top div {
+    padding-bottom: 30px;
+}
+top li a{
+    text-decoration: none;
+}
+
+.started {
+    border: 1px solid rgb(215, 215, 215);
+    width: 70%;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.started li {
+    padding: 0px;
+}
+
+
+/* .started_sub_menu에 대한 스타일 설정 */
+.started_sub_menu {
+    display: flex; /* Flexbox를 사용하여 자식 요소들을 수평으로 배치 */
+    flex-direction: row; /* 자식 요소들을 가로 방향으로 배치 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    width: 100%; /* 전체 너비 설정 */
+}
+/* 각 <dd> 요소를 가로로 배치 */
+.started_sub_menu dl {
+    display: flex; /* Flexbox를 사용하여 자식 요소들을 수평으로 배치 */
+    flex-direction: row; /* 자식 요소들을 가로 방향으로 배치 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    list-style-type: none; /* 기본 목록 스타일 제거 */
+}
+
+/* <dd> 요소의 스타일 설정 */
+.started_sub_menu dd {
+    margin-right: 10px; /* 각 <dd> 요소 사이에 여백 추가 */
+    display: block;
+    background-color: rgb(4, 97, 4);
+}
+
+/* <a> 링크의 기본 스타일 제거 */
+.started_sub_menu a {
+    text-decoration: none; /* 기본 밑줄 제거 */
+    color: #333; /* 텍스트 색상 설정 */
+}
+
+
